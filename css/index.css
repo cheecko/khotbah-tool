@@ -1,0 +1,29 @@
+body {
+    background: white url("../images/background.png");
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* templates.php */
+.input-file-box {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+
+    font-size: 1.25rem;
+    background-color: #c8dadf;
+    position: relative;
+    height:100%;
+}
+.input-file-icon {
+    color: #92b0b3;
+    font-size: 3em;
+}
+.card-footer {
+    background-color: rgba(0,0,0,.05);
+}
+audio {
+    padding: 1px;
+}
