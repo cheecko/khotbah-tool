@@ -22,8 +22,8 @@
                 $return["type"][$index] = $file;
             }
         }
-        if (!file_exists("../media/audio/")) {
-            mkdir("../media/audio/", 0777, true);
+        if (!file_exists("../media/")) {
+            mkdir("../media/", 0777, true);
         }
         $count = 0;
         foreach($files["tmp_name"] as $index=>$file) {
@@ -46,7 +46,7 @@
 
                 $result = $sermon->setSermon($data);
 
-                move_uploaded_file($file, "../media/audio/" . $files["name"][$index]);
+                move_uploaded_file($file, "../media/" . $files["name"][$index]);
                 $count++;
             }
         }
